@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All User</h1>
+	<p>User <span id="input1"></span></p>
+	<p>Ro.No <span id="input2"></span></p>
+	<p>Mo.No<span id="input3"></span></p>
+	<p>Dept<span id="input4"></span></p>
+
+</body>
+</html>
+
+<script>
+    let data = JSON.parse(localStorage.getItem("data"));
+
+document.getElementById("input1").textContent = data.input1;
+document.getElementById("input2").textContent = data.input2;
+document.getElementById("input3").textContent = data.input3;
+document.getElementById("input4").textContent = data.input4;
+</script>
